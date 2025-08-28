@@ -22,12 +22,9 @@
 * Works in real-time for both internal and external clients.
 
 # Example 
-### (Client → API Gateway → Service Sidecar → Microservice → Database)
-1. Microservice handles customer orders. 
-2. Sidecar container runs alongside the microservice:
-3. Intercepts HTTP requests and responses.
-4. Applies PII detection/redaction code (use code here).
-5. Forwards the redacted data to the service or database.
+1. Applies PII detection/redaction code (use code here).
+2. Forwards the redacted data to the service or database.
 
+Means when api request went to users database path then this is where we should put it.
 For thinking of Soc, it can also generate alert.
 Encoding for ", ', <, >, { and } and some others.
